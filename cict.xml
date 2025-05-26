@@ -6,7 +6,7 @@
         <lastname>Cruz</lastname>
         <email>kristal.cruz@gmail.com</email>
         <course>BSIT</course>
-        <image>uploads/pic001.jpg</image>
+        <image>pic001.jpg</image>
     </student>
     <student>
         <id>2</id>
@@ -14,6 +14,6 @@
         <lastname>Salonga</lastname>
         <email>faye.salonga@gmail.com</email>
         <course>BSIT</course>
-        <image>uploads/pic003.jpg</image>
+        <image>pic003.jpg</image>
     </student>
 </Students>
