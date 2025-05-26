@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students>
+    <student>
+        <id>1</id>
+        <firstname>Kristal</firstname>
+        <lastname>Cruz</lastname>
+        <email>kristal.cruz@gmail.com</email>
+        <course>BSIT</course>
+        <image>uploads/pic001.jpg</image>
+    </student>
+    <student>
+        <id>2</id>
+        <firstname>Faye</firstname>
+        <lastname>Salonga</lastname>
+        <email>faye.salonga@gmail.com</email>
+        <course>BSIT</course>
+        <image>uploads/pic003.jpg</image>
+    </student>
+</Students>

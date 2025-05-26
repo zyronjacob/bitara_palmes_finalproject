@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team Section</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #0e0e11;
+      color: #fff;
+    }
+
+    header {
+      background-color: #1e1e24;
+      color: #ff4d4d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0 4px 10px rgba(255, 77, 77, 0.2);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 2px solid #ff4d4d;
+      border-radius: 5px;
+      color: #ff4d4d;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #ff4d4d;
+      color: white;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .title h4 {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: #1e1e24;
+      border-radius: 10px;
+      color: #ff4d4d;
+      box-shadow: 0 8px 20px rgba(255, 77, 77, 0.15);
+    }
+
+    .card_Container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      position: relative;
+      width: 250px;
+      height: 350px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 25px 40px rgba(255, 77, 77, 0.1);
+      background-color: #1e1e24;
+    }
+
+    .imbBx,
+    .imbBx img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .content {
+      position: absolute;
+      bottom: -160px;
+      width: 100%;
+      height: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: rgba(255, 77, 77, 0.9);
+      backdrop-filter: blur(10px);
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      transition: bottom 0.5s ease;
+    }
+
+    .card:hover .content {
+      bottom: 0;
+    }
+
+    .contentBx h3 {
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .contentBx h3 span {
+      display: block;
+      font-size: 13px;
+      font-weight: 300;
+      text-transform: none;
+    }
+
+    .sci {
+      display: flex;
+      gap: 15px;
+    }
+
+    .sci li {
+      list-style: none;
+      transform: translateY(40px);
+      opacity: 0;
+      transition: 0.5s ease;
+    }
+
+    .card:hover .sci li {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .sci li a {
+      color: white;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .sci li a:hover {
+      color: #ffe5e5;
+    }
+
+    @media (max-width: 768px) {
+      .card_Container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">ABC Corp.</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" class="active">About Us</a></li>
+        <li><a href="http://localhost/finalproject_wst/">Student</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <div class="title">
+      <h4>Our Team</h4>
+    </div>
+
+    <div class="card_Container">
+      <div class="card">
+        <div class="imbBx">
+          <img src="zyron.png" alt="Zyron">
+        </div>
+        <div class="content">
+          <div class="contentBx">
+            <h3>Zyron Jacob Bitara <br><span>Data Analyst</span></h3>
+          </div>
+          <ul class="sci">
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imbBx">
+          <img src="jane.jpg" alt="Jane">
+        </div>
+        <div class="content">
+          <div class="contentBx">
+            <h3>Mary Jane Palmes <br><span>Data Analyst</span></h3>
+          </div>
+          <ul class="sci">
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

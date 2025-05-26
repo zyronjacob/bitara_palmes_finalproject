@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Corp.</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: url('') no-repeat center center fixed;
+      background-color: #0e0e11;
+      display: flex;
+      min-height: 100vh;
+      color: white;
+    }
+
+    .left-section {
+      flex: 1;
+      background-color: #1e1e24;
+      clip-path: ellipse(100% 100% at 0% 50%);
+      box-shadow: 0 0 40px #ff4d4d inset;
+    }
+
+    .right-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      background-color: #0e0e11;
+    }
+
+    .text-content {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .text-content h2 {
+      font-size: 2rem;
+      color: #ff4d4d;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .text-content h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-shadow: 0 0 10px #ff4d4d;
+    }
+
+    .text-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+
+    .get-started {
+      display: inline-block;
+      padding: 14px 36px;
+      font-size: 1rem;
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 77, 77, 0.7);
+    }
+
+    .get-started:hover {
+      background: #a80000;
+      box-shadow: 0 4px 20px rgba(168, 0, 0, 0.9);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .left-section {
+        clip-path: none;
+        height: 200px;
+      }
+
+      .right-section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="left-section"></div>
+  <div class="right-section">
+    <div class="text-content">
+      <h2>Welcome!</h2>
+      <h1>ABC Corp.</h1>
+      <p>
+        Keep track of student information with ease and accuracy.<br />
+        Our system helps you organize student information.<br />
+        Manage your academic data efficiently and effectively.
+      </p>
+      <a href="aboutus.html" class="get-started">Get Started</a>
+    </div>
+  </div>
+</body>
+
+</html>
